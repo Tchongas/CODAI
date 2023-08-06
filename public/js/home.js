@@ -10,7 +10,7 @@ document.getElementById("transaction-button").addEventListener("click", function
     window.location.href = "transactions.html"
 })
 
-//adicionar lancamento
+//Adcioanr Lançamento
 document.getElementById("transaction-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -29,7 +29,7 @@ document.getElementById("transaction-form").addEventListener("submit", function(
     getCashIn();
     getCashOut();
     getTotal();
-    alert("Lancamento adicionado com sucesso.");
+    alert("Lançamento adicionado com sucesso.");
 
 });
 

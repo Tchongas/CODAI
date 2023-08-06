@@ -7,7 +7,7 @@ let data = {
 
 document.getElementById("button-leave").addEventListener("click", logout)
 
-//adicionar lancamento
+//adicionar Lançamento
 document.getElementById("transaction-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -24,7 +24,7 @@ document.getElementById("transaction-form").addEventListener("submit", function(
     e.target.reset();
     myModal.hide();
     getTransactions();
-    alert("Lancamento adicionado com sucesso.");
+    alert("Lançamento adicionado com sucesso.");
 
 });
 
@@ -59,7 +59,7 @@ function getTransactions() {
             let type = "Entrada"
 
             if(item.type ==="2") {
-                type = "Saida"
+                type = "Saída"
             }
 
             transactionHtml += `<tr>
